@@ -20,7 +20,6 @@ class Products extends React.Component {
             inStockOnly: false,
             products: PRODUCTS
         };
-
         this.handleFilter = this.handleFilter.bind(this);
         this.handleDestroy = this.handleDestroy.bind(this);
         this.saveProduct = this.saveProduct.bind(this);
@@ -52,14 +51,14 @@ class Products extends React.Component {
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}
                     onFilter={this.handleFilter}
-                ></Filters>
+                />
                 <ProductTable
                     products={this.state.products}
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}
                     onDestroy={this.handleDestroy}
-                ></ProductTable>
-                <ProductForm onSave={this.saveProduct} ></ProductForm>
+                />
+                <ProductForm onSave={this.saveProduct} />
             </div>
         );
     }

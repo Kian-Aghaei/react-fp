@@ -8,7 +8,7 @@ class ProductTable extends React.Component {
         this.sortByColumnAndDirection = this.sortByColumnAndDirection.bind(this);
         this.state = {
             sort : {
-                column : 'price',
+                column : 'Price',
                 direction : 'desc'
             }
         };
@@ -25,7 +25,7 @@ class ProductTable extends React.Component {
         if (a < b) {
             return -1 * isDesc
         }
-        return;
+        return 0;
     }
     sortProducts() {
         let productAsArray = Object.keys(this.props.product).map((pid) => this.props.product[pid]);

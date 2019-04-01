@@ -28,7 +28,7 @@ class Products extends React.Component {
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}
                 />
-                <ProductTable product={PRODUCTS}
+                <ProductTable product={this.state.product}
                               filterText={this.state.filterText}
                               inStockOnly={this.state.inStockOnly}
                 />
